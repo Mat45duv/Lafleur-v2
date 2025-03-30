@@ -1,0 +1,111 @@
+/* Importation d'une police élégante */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #f8f9fa;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Conteneur principal */
+.container {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 350px;
+}
+
+/* Logo */
+.container img {
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+/* Titre */
+h1 {
+    font-size: 22px;
+    color: #ff69b4;
+    margin-bottom: 20px;
+}
+
+/* Labels */
+label {
+    font-weight: bold;
+    display: block;
+    text-align: left;
+    margin: 8px 0 5px;
+}
+
+/* Champs de saisie */
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+input:focus {
+    border-color: #ff69b4;
+    outline: none;
+}
+
+/* Boutons */
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Bouton connexion */
+button[type="submit"] {
+    background: #ff69b4;
+    color: white;
+}
+
+button[type="submit"]:hover {
+    background: #ff1493;
+}
+
+/* Bouton inscription */
+button[onclick] {
+    margin-top: 10px;
+    background: #ddd;
+    color: black;
+}
+
+button[onclick]:hover {
+    background: #ccc;
+}
+
+/* Message d'erreur */
+p {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* Responsive */
+@media (max-width: 400px) {
+    .container {
+        width: 90%;
+    }
+}
